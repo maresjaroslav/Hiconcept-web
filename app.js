@@ -19,7 +19,7 @@ function getProjectImagePath(slug, fileName) {
   return `projects/${slug}/${fileName}`;
 }
 
-function renderProjectCard(project, isFeatured = false) {
+function renderProjectCard(project) {
   const coverPath = project.cover
     ? getProjectImagePath(project.slug, project.cover)
     : "";
@@ -32,7 +32,7 @@ function renderProjectCard(project, isFeatured = false) {
     : `<div class="placeholder">Bez titulní fotky</div>`;
 
   return `
-    <a class="project-card ${isFeatured ? "featured" : ""}" href="project.html?slug=${encodeURIComponent(project.slug)}">
+    <a class="project-card" href="project.html?slug=${encodeURIComponent(project.slug)}">
       <div class="project-card-media">
         ${mediaHtml}
       </div>
@@ -52,14 +52,8 @@ async function initHomePage() {
   try {
     const projects = await fetchJson("data/projects.json");
 
-    const sortedProjects = [...projects].sort((a, b) => {
-      const aFeatured = a.featured ? 1 : 0;
-      const bFeatured = b.featured ? 1 : 0;
-      return bFeatured - aFeatured;
-    });
-
-    grid.innerHTML = sortedProjects
-      .map((project, index) => renderProjectCard(project, index === 0))
+    grid.innerHTML = projects
+      .map((project) => renderProjectCard(project))
       .join("");
   } catch (error) {
     grid.innerHTML = `
