@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "nastavba-1",
+    "title": "Nástavba 1",
+    "location": "",
+    "year": "",
+    "type": "Nástavba / rekonstrukce",
+    "featured": true,
+    "cover": "cover.jpg",
+    "intro": "Projekt nástavby s důrazem na proporce, světlo a přirozené začlenění do stávající stavby.",
+    "text": "Návrh pracuje s úpravou stávajícího objektu a hledá klidné, funkční a prostorově kvalitní řešení pro každodenní užívání.",
+    "images": ["01.jpg", "02.jpg"]
+  },
+  {
+    "slug": "nastavba-2",
+    "title": "Nástavba 2",
+    "location": "",
+    "year": "",
+    "type": "Nástavba / rekonstrukce",
+    "featured": false,
+    "cover": "cover.jpg",
+    "intro": "Návrh nástavby zaměřený na jednoduchost, světlo a kvalitní obytný prostor.",
+    "text": "Projekt rozvíjí možnosti stávající stavby s důrazem na přirozené světlo, provozní logiku a celkovou obytnou kvalitu.",
+    "images": ["01.jpg", "02.jpg"]
+  },
+  {
+    "slug": "rd-mokra",
+    "title": "Rodinný dům Mokrá",
+    "location": "Mokrá",
+    "year": "",
+    "type": "Rodinný dům",
+    "featured": false,
+    "cover": "cover.jpg",
+    "intro": "Rodinný dům s důrazem na klidný výraz, propojení se zahradou a kvalitní každodenní užívání.",
+    "text": "Návrh rodinného domu staví na jednoduché dispozici, přirozeném světle a vztahu obytného prostoru k exteriéru.",
+    "images": ["01.jpg", "02.jpg"]
+  },
+  {
+    "slug": "rd-u-berouna",
+    "title": "Rodinný dům u Berouna",
+    "location": "u Berouna",
+    "year": "",
+    "type": "Rodinný dům",
+    "featured": false,
+    "cover": "cover.jpg",
+    "intro": "Dům navržený jako přirozené a klidné bydlení s důrazem na světlo, zahradu a jednoduchost.",
+    "text": "Projekt rodinného domu zaměřený na velkorysý obytný prostor, jasnou provozní logiku a silnou vazbu na okolní prostředí.",
+    "images": ["01.jpg", "02.jpg"]
+  },
+  {
+    "slug": "vila-roatan",
+    "title": "Vila Roatan",
+    "location": "Roatan",
+    "year": "",
+    "type": "Vila",
+    "featured": false,
+    "cover": "cover.jpg",
+    "intro": "Návrh vily s důrazem na výhledy, klima, světlo a plynulé propojení interiéru s exteriérem.",
+    "text": "Projekt vily pracuje s otevřeností, výhledy a atmosférou místa. Důraz je kladen na klidný architektonický výraz a kvalitní obytný prostor.",
+    "images": ["01.jpg", "02.jpg"]
+  }
+]

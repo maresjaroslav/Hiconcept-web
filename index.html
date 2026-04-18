@@ -6,82 +6,93 @@
   <title>Hiconcept – architektonické studio</title>
   <meta
     name="description"
-    content="Hiconcept je malé architektonické studio zaměřené na rodinné domy a obytnou architekturu s důrazem na světlo, proporce, materiál a každodenní užívání."
+    content="Hiconcept je malé architektonické studio zaměřené na rodinné domy a obytnou architekturu."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">HICONCEPT</div>
-      <div class="menu">
+<body data-page="home">
+  <header class="site-header">
+    <div class="page-shell nav">
+      <a class="brand" href="index.html">HICONCEPT</a>
+      <nav class="menu">
         <a href="#projekty">Projekty</a>
         <a href="#o-studiu">O studiu</a>
         <a href="#kontakt">Kontakt</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <div class="hero-content">
+  <section class="hero">
+    <div class="hero-media"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="page-shell hero-content">
       <p class="eyebrow">Hiconcept / architektonické studio</p>
       <h1>Architektura pro skutečný život.</h1>
       <p class="intro">
         Navrhujeme rodinné domy a obytné prostory s důrazem na světlo,
         proporce, materiál, zahradu a klidné každodenní užívání.
       </p>
-      <a class="button" href="#projekty">Zobrazit projekty</a>
+      <div class="hero-actions">
+        <a class="button" href="#projekty">Zobrazit projekty</a>
+        <a class="button button-secondary" href="#kontakt">Kontakt</a>
+      </div>
     </div>
-  </header>
+  </section>
 
   <main>
     <section id="projekty" class="section">
-      <p class="section-label">Vybrané projekty</p>
-
-      <div class="projects">
-        <article class="card">
-          <div class="image-placeholder"></div>
-          <h2>Rodinný dům Baška</h2>
-          <p>
-            Dům otevřený do zahrady, s důrazem na velkorysý obytný prostor,
-            světlo a každodenní pohodlí.
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Portfolio</p>
+            <h2>Vybrané projekty</h2>
+          </div>
+          <p class="section-note">
+            Rodinné domy, studie a obytná architektura s důrazem na světlo,
+            zahradu a každodenní kvalitu života.
           </p>
-        </article>
+        </div>
 
-        <article class="card">
-          <div class="image-placeholder"></div>
-          <h2>Rodinný dům Čechy pod Kosířem</h2>
-          <p>
-            Kompaktní dům s jižní orientací, přirozeným propojením interiéru
-            a exteriéru a jednoduchým výrazem.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="image-placeholder"></div>
-          <h2>Studie venkovského domu</h2>
-          <p>
-            Současný obytný dům s klidným charakterem, robustní materialitou
-            a důrazem na dlouhodobou kvalitu užívání.
-          </p>
-        </article>
+        <div id="projects-grid" class="projects-grid"></div>
       </div>
     </section>
 
-    <section id="o-studiu" class="section section-narrow">
-      <p class="section-label">O studiu</p>
-      <h2>Navrhujeme domy, ve kterých je dobře každý den.</h2>
-      <p>
-        Hiconcept se zaměřuje na obytnou architekturu s důrazem na přirozené
-        světlo, propojení se zahradou, jednoduchost, prostorovou velkorysost
-        a kvalitní každodenní užívání.
-      </p>
+    <section id="o-studiu" class="section section-soft">
+      <div class="page-shell two-col">
+        <div>
+          <p class="section-label">O studiu</p>
+          <h2>Navrhujeme domy, ve kterých je dobře každý den.</h2>
+        </div>
+        <div class="rich-text">
+          <p>
+            Hiconcept se zaměřuje na obytnou architekturu s důrazem na přirozené
+            světlo, propojení se zahradou, jednoduchost, prostorovou velkorysost
+            a kvalitní každodenní užívání.
+          </p>
+          <p>
+            Zajímají nás domy, které nejsou jen efektní na první pohled, ale
+            fungují dlouhodobě – provozně, prostorově i atmosférou.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="kontakt" class="section section-narrow">
-      <p class="section-label">Kontakt</p>
-      <h2>Pojďme probrat váš záměr</h2>
-      <p>E-mail: info@hiconcept.cz</p>
-      <p>Brno / Česká republika</p>
+    <section id="kontakt" class="section">
+      <div class="page-shell two-col">
+        <div>
+          <p class="section-label">Kontakt</p>
+          <h2>Pojďme probrat váš záměr.</h2>
+        </div>
+        <div class="rich-text contact-block">
+          <p><a href="mailto:info@hiconcept.cz">info@hiconcept.cz</a></p>
+          <p>Brno / Česká republika</p>
+          <p>Rodinné domy / studie / projektová dokumentace</p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
